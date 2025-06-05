@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+    color: rgb(158, 42, 42);
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 0;
+    left: 0;
+    background-color: rgb(158, 42, 42);
+    transition: width 0.5s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
